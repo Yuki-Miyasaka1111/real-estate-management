@@ -1,0 +1,289 @@
+.company{
+    padding-top: 70px;
+    width: 100%;
+    &-mainvisual{
+        background-image: url(/wp-content/themes/devote/img/top_mv_bg.jpeg);
+        background-size: cover;
+        background-position: 50%;
+        color: #fff;
+        position: relative;
+        min-width: 1344px;
+        &__inner{
+            position: relative;
+            width: 1160px;
+            height: 224px;
+            margin: 0 auto;
+            padding-top: 16px;
+            box-sizing: border-box;
+        }
+        &__breadcrumb{
+            width: 1160px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 12px;
+            line-height: 1.41667;
+            letter-spacing: .04em;
+            background: transparent;
+            margin: 16px 0 0;
+            padding: 0;
+            & li{
+                display: inline;
+                & a{
+                    text-decoration-line: underline;
+                }
+                &:not(:last-child):after {
+                    content: " > ";
+                }
+            }
+        }
+        &__title{
+            margin: 48px auto 42px;
+            width: 1160px;
+            & span{
+                font-size: 16px;
+                line-height: 1.1875;
+                letter-spacing: .13em;
+                font-family: century-gothic,Avenir Next,Century Gothic,sans-serif;
+                font-weight: 400;
+                display: block;
+            }
+            & h1{
+                font-size: 40px;
+                letter-spacing: .13em;
+                font-style: normal;
+                font-weight: bold;
+                line-height: 1.5;
+                margin: 0.67em 0;
+            }
+        }
+    }
+    &-intro{
+        padding: 65px 0 70px;
+        min-width: 1160px;
+        &__inner{
+            width: 1160px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            align-items: center;
+        }
+        &__texts{
+            flex: 1 1;
+        }
+        &__name{
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 1.46875;
+            letter-spacing: .04em;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 1.6875;
+            letter-spacing: .04em;
+            color: #444;
+            margin-top: 20px!important;
+        }
+        &__CEOImg{
+            width: 568px;
+            margin: 0 0 0 29px;
+        }
+    }
+    &-title{
+        font-size: 32px;
+        line-height: 1.46875;
+        letter-spacing: .04em;
+        font-weight: 500;
+        margin: 0;
+        &__sub{
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: .04em;
+            font-weight: bold;
+            margin: 32px 0 16px;
+        }
+    }
+    &-info{
+        border-top: 1px solid #e5e5e5;
+        padding: 65px 0 70px;
+        min-width: 1160px;
+        &__inner{
+            width: 1160px;
+            margin: 0 auto;
+        }
+        &Content{
+            vertical-align: baseline;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1160px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &Block{
+            width: calc(50% - 12px);
+            margin-right: 24px!important;
+        }
+        &Item{
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 8px 0;
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: .04em;
+            &Label{
+                font-weight: bold;
+                width: 173px;
+                background: #f6f6f6;
+                padding: 8px 0 8px 16px;
+            }
+            &Value{
+                margin-left: 24px;
+                flex: 1 1;
+                padding: 8px 0;
+                &Title{
+                    font-weight: bold;
+                    margin-bottom: 8px!important;
+                    margin-top: 24px;
+                }
+                &Text{
+                    margin-left: 0;
+                    margin-top: 4px!important;
+                    & > span:first-child{
+                        width: 174px;
+                        display: inline-block;
+                        margin-right: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    .company{
+        &-mainvisual{
+            min-width: inherit;
+            &__breadcrumb{
+                width: 100%;
+            }
+            &__title{
+                width: 100%;
+                margin: 20px auto;
+                & h1{
+                    font-size: 32px;
+                    margin: 0.2em 0;
+                }
+            }
+            &__inner{
+                width: 90%;
+                margin: auto;
+                height: 170px;
+            }
+        }
+        &-intro{
+            min-width: inherit;
+            width: 90%;
+            margin: auto;
+            &__inner{
+                width: 100%;
+            }
+            &__CEOImg{
+                width: 50%;
+            }
+        }
+        &-info{
+            min-width: inherit;
+            width: 90%;
+            margin: 0 auto;
+            &__inner{
+                width: 100%;
+            }
+            &Item{
+                &Value{
+                    &Text{
+                        & span:first-child{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px){
+    .company{
+        &-mainvisual{
+            margin-top: -70px;
+            min-width: inherit;
+            &__breadcrumb{
+                display: none;
+            }
+            &__title{
+                width: 100%;
+                margin: 20px auto;
+                & h1{
+                    font-size: 32px;
+                    margin: 0.2em 0;
+                }
+            }
+            &__inner{
+                width: 90%;
+                height: 170px;
+                margin: auto;
+                padding-top: 50px;
+            }
+        }
+        &-intro{
+            width: 100%;
+            min-width: inherit;
+            padding: 40px 0;
+            &__inner{
+                width: 90%;
+                margin: auto;
+                flex-direction: column-reverse;
+            }
+            &__CEOImg{
+                width: 100%;
+                max-width: 500px;
+                margin: auto;
+            }
+            &__name{
+                font-size: 24px;
+            }
+            &__text{
+                font-size: 14px;
+            }
+        }
+        &-info{
+            min-width: inherit;
+            &__inner{
+                width: 100%;
+                margin: auto;
+            }
+            &Content{
+                display: block;
+            }
+            &Block{
+                width: 100%;
+            }
+            &Item{
+                font-size: 12px;
+                &Label{
+                    width: 25%;
+                }
+                &Value{
+                    margin-left: 12px;
+                    &Title{
+                        font-size: 14px;
+                    }
+                    &Text{
+                        & span:first-child{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,182 @@
+.property-contact{
+    position: sticky;
+    top: 80px;
+    &__inner{
+        background-color: #f6f6f6;
+        padding: 24px;
+    }
+    &__list{
+        background-color: transparent;
+        padding: 0;
+        & table{
+            padding-top: 16px;
+            width: 100%;
+        }
+        & table:first-child{
+            border-top: none;
+            margin-top: 0;
+            padding-top: 0;
+        }
+        & th{
+            font-weight: 400;
+            text-align: left;
+            white-space: nowrap;
+            padding: 0 24px 0 0;
+            box-sizing: border-box;
+            min-width: 75px;
+            flex: none;
+        }
+        & td{
+            width: 100%;
+        }
+    }
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    &__payment{
+        & > dl {
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 8px;
+            & > dt{
+                white-space: nowrap;
+                font-size: 10px;
+                line-height: 20px;
+                margin-bottom: 4px;
+            }
+            & > dd{
+                line-height: 1.5;
+                margin: 0 0 4px 1em;
+                flex: 1 1;
+                color: #111;
+                font-weight: bold;
+                font-size: 16px;
+                & > span{
+                    font-size: 10px!important;
+                }
+            }
+        }
+    }
+    &__title{
+        font-size: 12px;
+        line-height: 23px;
+        color: #8e8e8e;
+        flex: .35 1;
+    }
+    &__text{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.4375;
+        flex: 1 1;
+        color: #111;
+    }
+    &__listPrice{
+        width: 100%;
+    }
+    &__span{
+        font-size: 10px!important;
+        font-weight: 500;
+        line-height: 1.4375;
+        color: #111;
+    }
+    &__note{
+        font-size: 10px;
+        letter-spacing: .04em;
+        color: #8e8e8e;
+        line-height: 1.5;
+        margin: 8px 0;
+    }
+}
+
+.property-listPrice{
+    &__title{
+        font-size: 12px;
+        line-height: 23px;
+        color: #8e8e8e;
+    }
+    &__text{
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 1.4375;
+        flex: 1 1;
+        color: #111;
+    }
+}
+
+.property-btn{
+    &__contact{
+        padding: 24px 0;
+        box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+        font-weight: 500;
+        height: 72px;
+        width: 100%;
+        background: #1f2a34 0 0 no-repeat padding-box;
+        border: 1px solid #1f2a34;
+        border-radius: 3px;
+        opacity: 1;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 14px;
+        line-height: 1.5;
+        box-sizing: border-box;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 16px;
+        transition: 0.3s ease-out;
+        &:hover{
+            color: #1f2a34;
+            background-color: #fff;
+        }
+    }
+    &__tel{
+        text-align: center;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 3px;
+        display: block;
+        padding: 16px 0 10px;
+        background-color: #fff;
+        margin-top: 16px;
+        transition: 0.3s ease-out;
+        &:hover{
+            border: 1px solid #1f2a34;
+        }
+    }
+    &__telNumber{
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 400;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+    &__telInfo{
+        font-size: 12px;
+        line-height: 1.41667;
+        margin-top: 4px;
+    }
+    &__register{
+        color: #1f2a34!important;
+        background-color: #fff!important;
+        border: 1px solid #e5e5e5;
+        box-shadow: none;
+        transition: 0.3s ease-out;
+        &:hover{
+            border: 1px solid #1f2a34;
+            transition: 0.3s ease-out;
+        }
+    }
+}

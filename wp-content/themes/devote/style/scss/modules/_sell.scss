@@ -1,0 +1,361 @@
+.sell{
+    padding-top: 70px;
+    width: 100%;
+    background-color: #FCFCFC;
+    &-mainvisual{
+        background-image: url(/wp-content/themes/devote/img/top_mv_bg.jpeg);
+        background-size: cover;
+        background-position: 50%;
+        color: #fff;
+        position: relative;
+        min-width: 1344px;
+        &__inner{
+            position: relative;
+            width: 1160px;
+            height: 224px;
+            margin: 0 auto;
+            padding-top: 16px;
+            box-sizing: border-box;
+        }
+        &__breadcrumb{
+            width: 1160px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 12px;
+            line-height: 1.41667;
+            letter-spacing: .04em;
+            background: transparent;
+            margin: 16px 0 0;
+            padding: 0;
+            & li{
+                display: inline;
+                & a{
+                    text-decoration-line: underline;
+                }
+                &:not(:last-child):after {
+                    content: " > ";
+                }
+            }
+        }
+        &__title{
+            margin: 48px auto 42px;
+            width: 1160px;
+            & span{
+                font-size: 16px;
+                line-height: 1.1875;
+                letter-spacing: .13em;
+                font-family: century-gothic,Avenir Next,Century Gothic,sans-serif;
+                font-weight: 400;
+                display: block;
+            }
+            & h1{
+                font-size: 40px;
+                letter-spacing: .13em;
+                font-style: normal;
+                font-weight: bold;
+                line-height: 1.5;
+                margin: 0.67em 0;
+            }
+        }
+    }
+    &-support{
+        margin: 64px auto 0;
+        width: 800px;
+        & h1{
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 0 30px 0;
+        }
+        & p{
+            font-size: 16px;
+            margin: 0 0 60px 0;
+            line-height: 1.5;
+        }
+        & a{
+            width: 300px;
+            margin: 0 auto;
+        }
+    }
+    &-why{
+        border: 2px solid #1C1C1C;
+        border-radius: 8px;
+        width: 800px;
+        margin: 100px auto 0;
+        padding: 0 24px 48px;
+        z-index: 1;
+        text-align: center;
+        & h2{
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: -11px 0 24px;
+            z-index: 10;
+            display: inline-block;
+            background-color: #fff;
+            padding: 0 20px;
+        }
+        &__flex{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            & a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: #F4F4F4;
+                position: relative;
+                & img{
+                    width: 55%;
+                }
+                &:first-child::after{
+                    content: "豊富な取引実績";
+                    position: absolute;
+                    bottom: -20px;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                    font-size: 12px;
+                    width: 100%;
+                }
+                &:nth-child(2)::after{
+                    content: "物件種別不問";
+                    position: absolute;
+                    bottom: -20px;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                    font-size: 12px;
+                    width: 100%;
+                }
+                &:last-child::after{
+                    content: "多彩な集客チャネル";
+                    position: absolute;
+                    bottom: -20px;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                    font-size: 12px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &-item{
+        width: 1160px;
+        margin: 100px auto 0;
+        &__block{
+            &--flex{
+                margin-bottom: 84px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                & img{
+                    width: 50%;
+                }
+                & > div{
+                    padding: 0 40px;
+                    & h2{
+                        font-size: 32px;
+                        margin-bottom: 72px;
+                    }
+                    & p{
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+    &-contact{
+        width: 1160px;
+        margin: 100px auto 0;
+        padding: 35px 0;
+        text-align: center;
+        background-color: #fff;
+        &__title{
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+        &__text{
+            font-size: 16px;
+            width: 50%;
+            margin: 0 auto;
+            line-height: 1.5;
+
+            & a{
+                color: #060098;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        &__form{
+            width: 400px;
+            margin: 0 auto;
+            text-align: left;
+            & h3{            
+                display: inline-block;
+                margin: 0;
+                font-size: 16px;
+                font-weight: bold;
+                color: #444;
+                letter-spacing: .13em;
+                vertical-align: bottom;
+            }
+            & p{
+                text-align: left;
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    .sell{
+        &-mainvisual{
+            min-width: inherit;
+            &__breadcrumb{
+                width: 100%;
+            }
+            &__title{
+                width: 100%;
+                margin: 20px auto;
+                & h1{
+                    font-size: 32px;
+                    margin: 0.2em 0;
+                }
+            }
+            &__inner{
+                width: 90%;
+                margin: auto;
+                height: 170px;
+            }
+        }
+        &-item{
+            width: 100%;
+        }
+        &-contact{
+            width: 100%;
+        }
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .sell{
+        &-why{
+            width: 90%;
+        }
+        &-item{
+            &__block{
+                &--flex{
+                    & > div{
+                        & h2{
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .sell{
+        padding: 70px 0;
+        &-mainvisual{
+            margin-top: -70px;
+            min-width: inherit;
+            &__breadcrumb{
+                display: none;
+            }
+            &__title{
+                width: 100%;
+                margin: 20px auto;
+                & h1{
+                    font-size: 32px;
+                    margin: 0.2em 0;
+                }
+            }
+            &__inner{
+                width: 90%;
+                height: 170px;
+                margin: auto;
+                padding-top: 50px;
+            }
+        }
+        &-support{
+            width: 100%;
+            margin: 32px auto 0;
+            & p{
+                width: 90%;
+                margin: 0 auto 40px;
+            }
+        }
+        &-why{
+            width: 80%;
+            margin: 80px auto 0;
+            padding: 0 0 24px;
+            &__flex{
+                display: block;
+                & a{
+                    width: 200px;
+                    height: 200px;
+                    margin: 0px auto 40px;
+                }
+            }
+        }
+        &-item{
+            width: 100%;
+            margin: 40px auto;
+            &__block{
+                &:nth-child(2){
+                    & > .sell-item__block--flex{
+                        flex-direction: column-reverse;
+                    }
+                }
+                &--flex{
+                    flex-direction: column;
+                    margin-bottom: 40px;
+                    & img{
+                        width: 100%;
+                    }
+                    & > div{
+                        padding: 0;
+                        width: 90%;
+                        margin: auto;
+                        & h2{
+                            font-size: 28px;
+                            margin: 20px 0;
+                        }
+                    }
+                }
+            }
+        }
+        &-contact{
+            width: 100%;
+            margin: 40px auto 0;
+            padding: 35px 0 0;
+            &__text{
+                width: 90%;
+            }
+            &__form{
+                width: 90%;
+                margin: 0 auto;
+                & h3{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .assessment > input{
+        width: 100%!important;
+    }
+    .email > input{
+        width: 100%!important;
+    }
+    .tel > input{
+        width: 100%!important;
+    }
+    .last-name > input, .last-name > input{
+        width: 95%!important;
+    }
+}

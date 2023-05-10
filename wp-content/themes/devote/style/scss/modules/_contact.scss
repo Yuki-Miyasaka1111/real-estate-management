@@ -1,0 +1,312 @@
+.contact{
+    margin: 70px 0 0;
+    padding: 0 0 100px 0;
+    width: 100%;
+    background-color: #f6f6f6;
+    &-head{
+        display: flex;
+        margin: 0 auto;
+        padding: 50px 0;
+        width: 700px;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    &-tel{
+        width: 700px;
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        margin: 0 auto 16px;
+        &__h2{
+            line-height: 1.5;
+            margin-bottom: 0;
+            margin-left: 24px;
+            font-size: 18px;
+            letter-spacing: .13em;
+        }
+        &__link{
+            width: 325px;
+            margin-right: 24px;
+            color: #444;
+            text-align: center;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 3px;
+            display: block;
+            padding: 16px 0 10px;
+            background-color: #fff;
+        }
+        &__text1{
+            font-size: 20px;
+            line-height: 1.2;
+            font-weight: 400;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+        }
+        &__text2{
+            font-size: 12px;
+            line-height: 1.41667;
+            margin-top: 4px;
+        }
+    }
+    &-inner{
+        margin: 0 auto;
+        padding: 50px 100px 80px;
+        width: 700px;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+    &-form{
+        &__h2{
+            margin: 32px 0;
+            font-size: 24px;
+            line-height: 1.5;
+            font-weight: 500;
+            color: #111;
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 17px;
+            letter-spacing: .13em;
+        }
+        &__h3{
+            margin: 32px 0;
+            display: inline-block;
+            margin-bottom: 8px;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #444;
+            font-weight: 500;
+            letter-spacing: .13em;
+            &-2{
+                margin: 0 0 8px;
+                display: inline-block;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #444;
+                font-weight: 500;
+                letter-spacing: .13em;
+            }
+        }
+    }
+    &-sell, &-lease, &-about{
+        &__flex{
+            display: flex;
+            flex-wrap: wrap;
+            &--required{
+                display: flex;
+                align-items: center;
+                margin: 25px 0 10px;
+                & h3{
+                    margin-right: 10px;
+                }
+                & span{
+                    padding: 0 4px;
+                    background-color: #1f2a34;
+                    color: #fff;
+                    width: 30px;
+                    height: 15px;
+                    font-size: 10px;
+                    line-height: 1.5;
+                }
+                & p{
+                    margin-left: 10px;
+                }
+            }
+            & > div{
+                width: 50%;
+                & p{
+                    margin: 0!important;
+                }
+            }
+        }
+    }
+}
+
+.contents-inquiry > span > span{
+    display: block;
+    font-size: 16px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.type-of-contract > span > span{
+    width: 50%;
+    padding: 15px 7px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #111;
+    margin: 0;
+    font-size: 14px;
+}
+
+.industry > select{
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    position: relative;
+    white-space: normal;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 1.71429;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.length-of-service span > span{
+    width: 33%;
+    padding: 15px 7px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #111;
+    margin: 0;
+    font-size: 14px;
+}
+
+.name-flex{
+    display: flex;
+    & > div{
+        margin-right: 20px;
+    }
+}
+.assessment > input{
+    font-size: 14px;
+    width: 100%;
+    height: 44px;
+    padding: 0 16px;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;  
+}
+.last-name > input{
+    font-size: 14px;
+    width: 95%;
+    height: 44px;
+    padding: 0 16px;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.first-name > input{
+    font-size: 14px;
+    width: 95%;
+    height: 44px;
+    padding: 0 16px;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.email > input{
+    font-size: 14px;
+    width: 100%;
+    height: 44px;
+    padding: 0 16px;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #ccc;
+}
+
+.tel > input{
+    font-size: 14px;
+    width: 100%;
+    height: 44px;
+    padding: 0 16px;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #ccc;
+}
+
+.detailed-requests > textarea{
+    font-size: 16px;
+    width: 93%;
+    height: 224px;
+    padding: 16px;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: none;
+    line-height: 1.5;
+    overflow: auto;
+}
+
+.contact-submit{
+    text-align: center;
+    pointer-events: auto;
+    background-color: #1f2a34;
+    display: block;
+    width: 335px;
+    height: 60px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 32px auto 0;
+    border: none;
+    border-radius: 3px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    &:hover{
+        color: #1f2a34;
+        border: 1px solid #1f2a34;
+        background-color: #fff;
+    }
+}
+
+@media screen and (max-width:768px){
+    .contact{
+        &-head{
+            width: 100%;
+            padding: 24px 0;
+            display: block;
+            text-align: center;
+        }
+        &-tel{
+            width: 100%;
+            display: block;
+            &__h2{
+                margin: 0 0 8px 0;
+                text-align: center;
+            }
+            &__link{
+                margin: auto;
+            }
+        }
+        &-inner{
+            width: 100%;
+            padding: 24px;
+        }
+        &-form{
+            &__h2{
+                margin: 12px 0;
+                font-size: 18px;
+            }
+            &__h3-2{
+                font-size: 14px;
+            }
+        }
+    }
+}

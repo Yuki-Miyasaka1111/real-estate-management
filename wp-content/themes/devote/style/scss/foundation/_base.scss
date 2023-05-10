@@ -1,0 +1,115 @@
+/* image */
+img{
+    vertical-align: bottom;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* font size */
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 1.0rem;
+    font-family: dnp-shuei-gothic-kin-std, YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+button{
+    font-family: dnp-shuei-gothic-kin-std, YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+/* font color */
+body{
+    color: $black;
+}
+
+// body{
+//     margin: 80px 0 0 0;
+// }
+
+body{
+    min-width: 1024px;
+    margin: 0;
+}
+
+main{
+    width: 1160px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+p{
+    margin: 0;
+}
+
+//* タブレット対応 *//
+@media screen and (max-width:1024px){
+    body{
+        min-width: inherit;
+    }
+}
+
+//* スマホ対応 *//
+@media screen and (max-width:768px){
+    main{
+        margin-top: 0!important;
+        width: 100%;
+    }
+
+    body{
+        min-width:inherit;
+        margin: 0;
+    }
+}
+/* link */ 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* list */
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+/* button */
+button:focus {
+	outline:0;
+}
+
+.wpp-thumbnail{
+    margin: 0!important;
+}
+
+/* display */
+// @include screen_pc-tb{
+//     .sp{
+//         display: none;
+//     }
+// }
+
+// @include screen_tb-sp{
+//     .pc{
+//         display: none;
+//     }
+// }
+
+// @include screen_sp{
+//     .pc-tb{
+//         display: none;
+//     }
+// }
+
+

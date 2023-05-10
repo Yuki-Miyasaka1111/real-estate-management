@@ -1,0 +1,41 @@
+/* 区カテゴリ高さ調節 */
+#area-all{
+    max-height: 800px;
+}
+
+/* 物件名入力欄調節 */
+dl dt{
+    display: none!important;
+}
+dl dd{
+    margin: 0 0 0 30px!important;
+}
+dl:nth-of-type(2) input{
+    width: 500px;
+}
+dl:nth-of-type(3) input{
+    width: 500px;
+}
+dl:nth-last-child(-n+98){
+    width: 30%;
+    display: inline-block;
+}
+.dl_checkbox{
+    display: inline-block;
+    width: 24%!important;
+    margin: 0;
+}
+.dl_checkbox dt {
+    display: none!important;
+}
+.dl_checkbox dd {
+    width: 100%;
+    margin-left: 20px!important;
+    display: inline-block;
+}
+.dl_checkbox dd p{
+    margin: 10px 0!important;
+}
+.dl_checkbox:nth-last-child(62), .dl_checkbox:nth-last-child(53), .dl_checkbox:nth-last-child(41), .dl_checkbox:nth-last-child(28), .dl_checkbox:nth-last-child(16){
+    width: 100%!important;
+}

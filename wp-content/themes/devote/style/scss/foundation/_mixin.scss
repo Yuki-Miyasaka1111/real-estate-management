@@ -1,0 +1,167 @@
+// common
+@mixin section_title {
+    margin-bottom: 60px;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+// layout
+@mixin center_625 {
+    width: 62.5%;
+    min-width: 740px;
+    margin: 0 auto;
+}
+
+@mixin center_87 {
+    width: 87%;
+    min-width: 740px;
+    margin: 0 auto;
+}
+
+@mixin center_92 {
+    width: 92%;
+    margin: 0 auto;
+}
+
+@mixin center_576 {
+    width: 57.6%;
+    margin: 0 auto;
+}
+
+@mixin center_75 {
+    width: 75%;
+    margin: 0 auto;
+}
+
+@mixin center_100_max_1440{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*
+- 2-column flex layout with arbitary each width
+- space-between
+*/
+@mixin two-column($leftWidth, $rightWidth) {
+    @media screen and (min-width: $tb-min){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &>*:nth-child(1){
+            width: $leftWidth;
+        }
+        &>*:nth-child(2){
+            width: $rightWidth;
+        }
+    }
+}
+
+//button
+@mixin button_normal {
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid $keyBlue;
+    border-radius: 25px;
+    color: $keyBlue;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 0.16em;
+    background-color: $white;
+    transition: ease 0.3s;
+    &:hover{
+        color: $white;
+        background-color: $keyBlue;
+    }
+}
+
+@mixin button_small {
+    display: inline-block;
+    width: 260px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid $keyBlue;
+    border-radius: 25px;
+    color: $keyBlue;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 0.16em;
+    background-color: $white;
+}
+
+@mixin button_colored {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid $keyBlue;
+    border-radius: 50px;
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 0.16em;
+    background-color: $keyBlue;
+    box-shadow: 0px 0px 10px #00000029;
+}
+
+@mixin button_colored_orange {
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid $agarootOrange;
+    border-radius: 50px;
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 0.16em;
+    background-color: $agarootOrange;
+    box-shadow: 0px 0px 10px #00000029;
+}
+
+// breakpoint
+@mixin screen_pc{
+    @media screen and (min-width: $pc-min){
+        @content;
+    }
+}
+
+@mixin screen_pc-tb{
+    @media screen and (min-width: $tb-min){
+        @content;
+    }
+}
+
+@mixin screen_tb{
+    @media screen and (min-width: $tb-min) and (max-width: $tb-max){
+        @content;
+    }
+}
+
+@mixin screen_tb-sp {
+    @media screen and (max-width: $tb-max){
+        @content;
+    }
+}
+
+@mixin screen_sp{
+    @media screen and (max-width: $sp-max){
+        @content;
+    }
+}
+
+@mixin screen_opt_min_max($min-width, $max-width){
+    @media screen and (min-width: $min-width) and (max-width: $max-width){
+        @content;
+    }
+}
